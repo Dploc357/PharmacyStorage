@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Thông Tin Thuốc</title>
+    <style>
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .container__image {
+            flex: 1;
+            max-width: 500px;
+        }
+        .container__image img {
+            width: 100%;
+            height: auto;
+        }
+        .container__infor {
+            flex: 1;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .container__image,
+            .container__infor {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__image">
+            <img src="https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/06/thuoc-panadol-extra-2-1024x569.jpg" alt="Panadol đỏ">
+        </div>
+        <div class="container__infor">
+            <h3>Panadol đỏ</h3>
+            <p>Cách dùng: uống cmnl</p>
+            <p>Công dụng: trị đau đầu</p>
+            <p>Liều dùng: 1/ngày</p>
+        </div>
+    </div>
+</body>
+</html>
